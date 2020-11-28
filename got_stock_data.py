@@ -35,26 +35,14 @@ stocks = {
     "NVIDIA":"NVDA",
     "PepsiCo":"PEP",
     "Fitbit":"FIT",
-
 }
 
 my_stocks = {
     "Tesla":"TSLA",
     "Facebook":"FB",
-    "Coke":"COKE", 
-    "Apple":"AAPL", 
-    "Exxon":"XOM", 
-    "American Airlines":"AAL", 
-    "Boeing":"BA", 
-    "Nike":"NKE", 
-    "Lockheed Martin":"LMT",
 }
 
 PE_ratios = {}
-
-# was trying to initialize an empty dictionary to use to sort the pe ratios
-# [new_dict.setdefault("","") for x in range(4)]
-
 
 index = 0 
 for name, ticker in stocks.items():
@@ -77,7 +65,3 @@ for name, ticker in stocks.items():
 
     except:
         print(name + " : " + ticker + " - was not found.")
-
-# PE_ratios.sort()
-# for r in PE_ratios:
-#     print("PE ratio for " + name + " is: " + str(PE_ratio))
